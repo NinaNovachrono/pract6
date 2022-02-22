@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="peticiones.js"></script>
+    <title>Práctica 6 presencial</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="column left">
+            <!-- Puntos de color de la ventana -->
+            <span class="dot" style="background:#ED594A;"></span>
+            <span class="dot" style="background:#FDD800;"></span>
+            <span class="dot" style="background:#5AC05A;"></span>
+          </div>
+          <div class="column middle">
+            <!-- Simulador de Navegador -->
+            <input type="text" value="Listado de Ventas"disabled>
+          </div>
+          <div class="column right">
+            <!-- barras superiores derechas -->
+            <div style="float:right">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
+        <h1>Listado de Ventas</h1>
+    <select name="tipo" id="tipo">
+
+    </select>
+    <table id="ventas">
+        <tr>
+            <th>Folio</th>
+            <th>Tipo</th>
+            <th>Precio</th>
+            <th>Descuento</th>
+            <th>Total</th>
+            <th>Fecha Pago</th>
+            <th>Giro</th>
+
+
+        </tr>
+
+
+    </table>
+
+</body>
+</html>

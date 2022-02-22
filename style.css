@@ -1,0 +1,136 @@
+body {
+    font-family: Arial
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Ventana */
+  .container {
+    border: 3px solid #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  /* Contenedor Columnas y Toolbar */
+  .row {
+    padding: 10px;
+    background: #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  /* Columnas Float */
+  .column {
+    float: left;
+  }
+  
+  .left {
+    width: 15%;
+  }
+  
+  .right {
+    width: 10%;
+  }
+  
+  .middle {
+    width: 75%;
+  }
+  
+  /* Limpiar Floats */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Puntos de color */
+  .dot {
+    margin-top: 4px;
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  /* Estilo del campo de entrada */
+  input[type=text] {
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(231, 231, 231);
+    margin-top: -8px;
+    margin-right: 50px;
+    height: 25px;
+    color: #666;
+    padding: 5px;
+  }
+  
+  /* Barras superiores derechas (tipo menu)*/
+  .bar {
+    width: 17px;
+    height: 3px;
+    background-color: #aaa;
+    margin: 3px 0;
+    display: block;
+  }
+  
+  /*Contenido */
+  .content {
+    padding: 10px;
+  }
+
+  .bn632-hover {
+    width: 115px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 45px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn24 {
+    background-image: linear-gradient(
+        to right,
+        #afaae2,
+        #8e6594,
+        #dcdbff,
+        #fd8787
+      );
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  }
+  td {
+    padding: 15px;
+    background-color: rgba(255,255,255,0.2);
+    color: rgb(2, 2, 2);
+    font-family: sans-serif;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+		margin: 0;
+    background: linear-gradient(45deg, #b282d1,#fd8787);
+    font-family: sans-serif;
+    font-weight: 100;
+  }

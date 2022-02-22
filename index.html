@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="peticiones.js"></script>
+    <title>Practica 6</title>
+</head>
+
+<header>
+    <center><br>
+        <h1>Evidencia 6</h1>
+    </center>
+</header>
+
+<body>
+    <center>
+        Tipo: <select name="tipo" id="tipo"></select><br><br>
+
+        <h2>Ventas realizadas</h2>
+        <div id="tbl" class="mt-5 table col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
+            <table>
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Folio</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Descuento</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Fecha de Pago</th>
+                        <th scope="col">Giro</th>
+                    </tr>
+                </thead>
+                <tbody id="ventas">
+                </tbody>
+            </table>
+        </div>
+        <button type="button" class="btn btn-danger btn-lg" id="Limpiar" onclick="location.reload()">Limpiar</button><br><br><br><br>
+    </center>
+</body>
+</html>

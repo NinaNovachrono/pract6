@@ -6,52 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="peticiones.js"></script>
     <title>Práctica 6 presencial</title>
 </head>
-
+<div style="background-color:rgb(255, 212, 248)">
 <body>
-    <div class="container">
-        <div class="row">
-          <div class="column left">
-            <!-- Puntos de color de la ventana -->
-            <span class="dot" style="background:#ED594A;"></span>
-            <span class="dot" style="background:#FDD800;"></span>
-            <span class="dot" style="background:#5AC05A;"></span>
-          </div>
-          <div class="column middle">
-            <!-- Simulador de Navegador -->
-            <input type="text" value="Listado de Ventas"disabled>
-          </div>
-          <div class="column right">
-            <!-- barras superiores derechas -->
-            <div style="float:right">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-          </div>
-        </div>
         <h1>Listado de Ventas</h1>
+        
+
     <select name="tipo" id="tipo">
-
+      
     </select>
-    <table id="ventas">
-        <tr>
-            <th>Folio</th>
-            <th>Tipo</th>
-            <th>Precio</th>
-            <th>Descuento</th>
-            <th>Total</th>
-            <th>Fecha Pago</th>
-            <th>Giro</th>
-
-
-        </tr>
-
-
+    <br><br>
+    
+    <table id="ventas" class="table table-bordered border-primary table-hover table-active"
+    style="text-align:center ;">
+        <thead>
+            <tr>
+              <br>
+                <th scope="col" >Folio</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Descuento</th>
+                <th scope="col">Total</th>
+                <th scope="col">Fecha Pago</th>
+                <th scope="col">Giro</th>
+            </tr>
+        </thead>
+        
     </table>
-
+  </div>
 </body>
 </html>
